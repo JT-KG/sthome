@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------------------------------------------------------------------------------------*/
+.top-zero {
+  height: 20px;
+  background-color: rgb(239, 236, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 8px;
+  color: #272626;
+
+}
+
+span::before {
+  content: "ОФОРМИТЬ ЗАКАЗ ПО НОМЕРУ +996 550 784747 (WhatsApp)";
+  animation: animate infinite 10s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+  50% {
+    content: "ДОСТАВКА ПО ВСЕМУ КЫРГЫЗСТАНУ!";
+  }
+
+  75% {
+    content: "ДОСТАВКА ПО г.БИШКЕК БЕСПЛАТНО!";
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------*/
+
+.sticky+.content {
+  padding-top: 100px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* ----------------------------------------------------------------------------------------------------------*/
+
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  background-color: rgb(248, 248, 248);
+  z-index: 1;
+}
+
+.top .icon {
+  display: none;
+}
+
+.nav-bar {
+  margin-left: 15px;
+}
+
+
+.nav-bar a {
+  float: left;
+  padding: 1.2px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  color: #272626;
+  text-transform: uppercase;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+  color: rgb(221, 187, 102);
+}
+
+.nav-bar a.active {
+  text-decoration: underline;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.slogan {
+  text-align: center;
+  padding-top: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+
+}
+
+
+.logo img {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logo img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  /* filter: invert(58%) sepia(80%) saturate(347%) hue-rotate(10deg) brightness(100%) contrast(100%);*/
+}
+
+
+
+.language-selector {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.language-selector a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2px;
+  float: left;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 8px;
+  color: rgb(40, 40, 40);
+  text-decoration: none;
+}
+
+
+.language-selector a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(221, 187, 102);
+  font-weight: 600;
+  transition: 0.35s;
+}
+
+/*
+@media screen and (max-width: 600px) {
+  .top a {
+    font-size: 10px;
+  }
+  .top a.icon {
+    float: right;
+    display: block;
+  }
+  .logo img {
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .top.responsive {position: relative;}
+  .top.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+*/
+
+
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 5000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+
+.M0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px;
+}
+
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px 10px;
+}
+
+.column img {
+  border-radius: 50%;
+}
+
+
+.M1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.M2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text {
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  text-align: center;
+  padding: 8px 15px;
+  margin: 10px;
+  color: rgb(122, 122, 122) ;
+
+}
+
+
+
+.poster {
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+.poster-two {
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+
+.poster-column-one {
+  flex: 50%;
+  padding: 5px 12px 02px 25px;
+}
+
+.poster-column-two {
+  flex: 50%;
+  padding: 5px 25px 20px 12px;
+}
+
+
+.M3 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px;
+
+}
+
+.bottom-section {
+  background-color: rgb(195, 195, 195);
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /*Fixed Footer*/
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+}
+
+.bottom-left {
+  margin-left: 15px;
+}
+
+.bottom-left-text {
+  color: rgb(32, 32, 32);
+  font-size: 8px;
+  font-weight: 400;
+}
+
+
+
+.payments {
+  color: rgb(32, 32, 32);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+.payments-text {
+  color: rgb(18, 18, 18);
+  font-size: 8px;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+.payment-types {
+  font-size: 10px;
+}
+
+.payment-types ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+
+}
+
+.payment-types img {
+  height: 15px;
+  padding: 0px 2px;
+  opacity: 0.9;
+}
+
+
+
+
+.bottom-right {
+  margin-right: 15px;
+}
+
+.bottom-right img {
+  width: 20px;
+  filter: invert(10%);
+  padding-left: 2px;
+  opacity: 0.9;
+  /*filter: invert(168%) sepia(80%) saturate(347%) hue-rotate(320deg) brightness(100%) contrast(80%); */
+}
